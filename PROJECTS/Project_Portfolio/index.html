@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vamsi's Portfolio</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Bootsrtap styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Bootstrap Jquery CDN Link--> 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!--Bootstrap JavaScript CDN Link-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Custom fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container content-shadow">
+            <div class="row header">
+                <div class="col-md-3">
+                    <img src="images/udacity_logo.png" class="img-responsive title-logo" alt="Udacity logo">
+                </div>
+                <div class="col-md-3">        
+                </div>
+                <div class="col-md-6 text-right text-uppercase title-text">
+                    <h1 class="title-super">B.Vamsi Krishna</h1>
+                    <h4>Full Stack Web Developer</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="horizontal-rule">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="images/main.jpg">
+                        <source media="(max-width: 767px)" srcset="images/main_medium.jpg">
+                        <img src="images/main.jpg" alt="Full Stack Image" class="img-responsive main-image">
+                    </picture>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 project-title">
+                    <h2 class="text-muted">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="images/interview_guide.png">
+                            <source media="(min-width: 768px)" srcset="images/interview_guide_small.png">
+                            <source media="(max-width: 767px)" srcset="images/interview_guide_medium.png">
+                            <img src="images/interview_guide.png" alt="Interview Preparation Guide" class="img-responsive" data-toggle="modal" data-target="#project2">
+                        </picture>
+                        <figcaption class="figure-caption">
+                            <h3 class="text-uppercase">Interview Preparation Guide</h3>
+                        </figcaption>
+                        <a href="http://interview18.uphero.com/" target="_blank">
+                            <p>http://interview18.uphero.com/</p>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="images/movie_trailer_website.png">
+                            <source media="(min-width: 768px)" srcset="images/movie_trailer_website_small.png">
+                            <source media="(max-width: 767px)" srcset="images/movie_trailer_website_medium.png">
+                            <img src="images/movie_trailer_website.png" alt="Movie Trailer Website" class="img-responsive" data-toggle="modal" data-target="#project3">
+                        </picture>
+                        <figcaption class="figure-caption">
+                            <h3 class="text-uppercase">Movie Trailer Website</h3>
+                        </figcaption>
+                        <a href="https://goo.gl/ojQbVT" target="_blank">
+                            <p>https://goo.gl/ojQbVT</p>
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="images/cgpa_calculator.png">
+                            <source media="(min-width: 768px)" srcset="images/cgpa_calculator_small.png">
+                            <source media="(max-width: 767px)" srcset="images/cgpa_calculator_medium.png">
+                            <img src="images/cgpa_calculator.png" alt="Cgpa Calculator" class="img-responsive" data-toggle="modal" data-target="#project1">
+                        </picture>
+                        <figcaption class="figure-caption">
+                            <h3 class="text-uppercase">CGPA Calculator</h3>
+                        </figcaption>
+                        <a href="https://cgpacalc4.000webhostapp.com/" target="_blank">
+                            <p>https://cgpacalc4.000webhostapp.com/</p>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <footer>
+                <p class="footer-caption">Designed and Coded by B.Vamsi Krishna, Copyrights &copy; 2018</p>
+            </footer>
+        </div>
+        <!--Modals-->
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" >CGPA Calculator</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            This Webpage is used to calculate CGPA.CGPA or Cumulative Grade Points Average is the average of Grade Points obtained in all the subjects.By using this webpage one can select any number of subjects.Then input the grades and credits of each subject for the calculation of CGPA.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase">A Small Guide For Interview Preparation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            This Webpage is a guide for interview Preparation.It consists of study materials,videos,online tests related to Quantitative Aptitude,Verbal Ability,Logical Reasoning,Data Interpretation,other technical skills.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase">Movie Trailer Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            This Webpage contains a list of my favourite movies. It is a demonstration of server-side code to store a list of movies, including movie poster URL and a movie trailer URL. Udacity supplied code fresh_tomatoes is used to generate a static web page allowing visitors to watch trailers of the movies present in the website.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

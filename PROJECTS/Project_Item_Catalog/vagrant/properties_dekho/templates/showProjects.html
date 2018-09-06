@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	<title>Main Page</title>
+</head>
+<body>
+	<div class="container">
+		<div class = "flash">
+          {% with messages = get_flashed_messages() %}
+      {% if messages %}          
+        <ul id="unstyled">
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+</div>
+		<div class="row">
+			<div class="col-10">
+				<h2 class="text-center">Projects</h2>
+			</div>
+			<div class="col-2">
+				<a href="{{url_for('disconnect')}}" class="btn btn-danger" role="button" style="margin-top:30px;">Logout</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<!--Card-->
+				<div class="card">
+					<div class="card-body">
+						 <div class="row">
+							  <div class="col">
+				                   <!-- navbar-->
+				                   <nav class="navbar navbar-expand-lg navbar-light">
+										  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+										    <div class="navbar-nav">
+										      <a class="nav-item nav-link active" href="{{url_for('showResidentialRentalProjects')}}">Rental Residential Houses <span class="sr-only">(current)</span></a>
+										      <a class="nav-item nav-link" href="{{url_for('showResidentialSaleProjects')}}">Residential House Sales</a>
+										      <a class="nav-item nav-link" href="{{url_for('showCommercialRentalProjects')}}">Rental Commercial Complexes</a>
+										      <a class="nav-item nav-link" href="{{url_for('showCommercialSaleProjects')}}">Commercial Complex Sales</a>
+										      <a class="nav-item nav-link" href="{{url_for('showPayingGuestProjects')}}">Paying Guest</a>
+										    </div>
+										  </div>
+										</nav>
+			                   </div>
+		                    </div>
+		                    <div class="row">
+								{% for project in projects %}
+								<div class="col col-md-3">
+								    <div class="alert alert-primary" role="alert" align="center">
+								        <a class="pro-name" href='{{url_for('showProperties',project_id=project.project_id)}}'><h5>{{project.project_name}}</h5></a>
+								        <a class="edit-pro" href='{{url_for('editProject',project_id=project.project_id)}}'>Edit</a>
+								        <a class="del-pro" href='{{url_for('deleteProject',project_id=project.project_id)}}'>Delete</a>
+								    </div>
+								</div>
+								{% endfor %}
+							</div>
+						    <div class="row">
+								<div class="col">									
+								    <a href='{{url_for('newProject')}}' class="btn pull-right" data-toggle="tooltip" data-placement="top" title="Add New Project">
+								    	<i class="fa fa-plus-circle"></i>
+								    </a>
+								    <a href='{{url_for('showProjects')}}' class="btn pull-left" data-toggle="tooltip" data-placement="top" title="Goto Home Page">
+								    	<i class="fa fa-home"></i>
+								    </a>								    
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>

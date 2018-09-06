@@ -1,0 +1,77 @@
+body{
+	background-color:lightpink;
+}
+
+#unstyled li{
+	list-style:none;
+}
+
+.flash{
+	background: #cee5f5;
+}
+
+.text-center{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+#crd-body{
+	margin-top:10px;
+}
+
+.arr-back{
+	font-size:48px;
+	color:green;
+}
+
+.fa-plus-circle{
+	font-size:48px;
+	color:blue;
+}
+
+.fa-home{
+	font-size:48px;
+	color:green;
+}
+
+.properties-card{
+	margin-bottom:10px;
+	background-color:lightblue;
+}
+
+.navbar{
+	background-color:#6495ed;
+	margin-bottom:30px;
+}
+
+.pro-name{
+	color:black;
+}
+
+.edit-pro{
+	color:green;
+}
+
+.del-pro{
+	color:red;
+}
+
+.m-top{
+	margin-top:10%;
+}
+
+.card-bg-color{
+	background-color:#6495ed;
+}
+
+.width-50{
+	margin-bottom:20px;
+}
+
+.container-m-top{
+	margin-top:5%;
+}
+
+.select-m-btm,.name-m-btm{
+	margin-bottom:20px;
+}
