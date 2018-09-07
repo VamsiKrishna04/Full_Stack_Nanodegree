@@ -44,7 +44,7 @@ This project consists for the following files in the `properties_dekho` director
         See next section for more details on contents.
 
 ## Demo
-Click this link to view the website: http://vamsikrish04.pythonanywhere.com
+Click this link to view the website: https://vamsikrish04.pythonanywhere.com
 
 ### Templates
 The `/templates` directory contains the following files, written in HTML and the Jinja2 templating language:
