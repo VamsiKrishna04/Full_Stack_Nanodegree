@@ -11,6 +11,7 @@ Residential Rental, Residential Sale, Commercial Rental, Commercial Sale, Paying
  
 * [Required Libraries and Dependencies](#required-libraries-and-dependencies)
 * [Project contents](#project-contents)
+* [Demo](#demo)
 * [Templates](#templates)
 * [How to Run the Project](#how-to-run-the-project)
 * [Website Images](#crud-for-projects)
@@ -42,6 +43,8 @@ This project consists for the following files in the `properties_dekho` director
         the [Jinja 2](http://jinja.pocoo.org/docs/dev/) templating language for Python.
         See next section for more details on contents.
 
+## Demo
+Click this link to view the website: http://vamsikrish04.pythonanywhere.com
 
 ### Templates
 The `/templates` directory contains the following files, written in HTML and the Jinja2 templating language:
