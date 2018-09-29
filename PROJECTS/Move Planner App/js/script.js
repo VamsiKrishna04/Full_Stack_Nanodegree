@@ -23,7 +23,8 @@ function loadData() {
 
     // YOUR CODE GOES HERE!
     // Street View Image request is an HTTP URL
-    var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x400&location="+location
+    var img_url = "https://maps.googleapis.com/maps/api/streetview?size=600x400&key=AIzaSyD__I-fc0xXg3VnCK5Pu7uBqUNY_zQG8X4&location="+location
+    console.log(img_url)
     var backgroundImage = '<img class="bgimg" src="'+img_url+'">'    
     $body.append(backgroundImage);
 
@@ -59,8 +60,8 @@ function loadData() {
     var wikiRequestTimeout = setTimeout(function(){
         $wikiElem.text('Failed to get Wikipedia Resources');
         },8000);
-
-    var wiki_url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='+$cityName+'&limit=5&callback=wikiCallback';
+                    https://en.wikipedia.org/wiki/Hampi",
+    var wiki_url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='+$cityName+'&limit=5&callback=wikiCallback&key=AIzaSyD__I-fc0xXg3VnCK5Pu7uBqUNY_zQG8X4';
     $.ajax({
       url: wiki_url,
       dataType: "jsonp",
