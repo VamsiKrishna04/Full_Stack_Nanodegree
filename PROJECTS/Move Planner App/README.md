@@ -18,8 +18,8 @@ repository to your desktop. Then open the `index.html` file in folder `Move Plan
 For a demo, check out wepage, https://vamsikrishna04.github.io/Full_Stack_Nanodegree/PROJECTS/Move%20Planner%20App/index.html
 
 ## Documentation
-1)This project includes a html page i.e `index.html` where where the code for webpage exits.
-2)It includes a file named `style.css` in css folder which add styling to the webpage.
-3)It also includes a file named `script.js` in folder js where the api's are implemented.
+1.This project includes a html page i.e `index.html` where where the code for webpage exits.
 
+2.It includes a file named `style.css` in css folder which add styling to the webpage.
 
+3.It also includes a file named `script.js` in folder js where the api's are implemented.
