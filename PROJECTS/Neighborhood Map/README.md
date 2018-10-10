@@ -17,7 +17,7 @@ Download the PROJECTS zip file to you computer and unzip the file  or clone this
 repository to your desktop. Then open the `index.html` file in folder `Neighborhood Map` to view the webpage on the browser.
 
 ## Demo
-For a demo, check out wepage, https://google.com
+For a demo, check out wepage, https://vamsikrishna04.github.io/Full_Stack_Nanodegree/PROJECTS/Neighborhood%20Map/index.html
 
 ## Documentation
 1)This project includes a html page i.e `index.html` where where the front end code for webpage exits.
