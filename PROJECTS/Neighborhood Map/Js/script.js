@@ -191,10 +191,11 @@ function wikiArticle(location){
 function currentTemperature (lat,lng){  
   var current_temp = "";
   var secretKey = "2a8ad86741e4686531e403d321ed6a1f";
-  var darkskyAPI='https:////api.darksky.net/forecast/'+secretKey+'/'+lat+','+lng+
+  var init_url = 'https://api.darksky.net/forecast/';
+  var darkskyAPI= init_url+secretKey+'/'+lat+','+lng+
       '?exclude=minutely,hourly,daily,alerts,flags&units=si'
   console.log(darkskyAPI);
-  $.ajax( darkskyAPI, {
+  $.ajax(darkskyAPI, {
     dataType: 'jsonp'
   })
     .done(function(data) {
