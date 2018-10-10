@@ -193,8 +193,7 @@ function currentTemperature (lat,lng){
   var secretKey = "2a8ad86741e4686531e403d321ed6a1f";
   var init_url = 'https://api.darksky.net/forecast/';
   var darkskyAPI= init_url+secretKey+'/'+lat+','+lng+
-      '?exclude=minutely,hourly,daily,alerts,flags&units=si'
-  console.log(darkskyAPI);
+      '?exclude=minutely,hourly,daily,alerts,flags&units=si'  
   $.ajax(darkskyAPI, {
     dataType: 'jsonp'
   })
