@@ -1,0 +1,111 @@
+html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0;
+    bottom:0em;
+	width: 100%;
+}
+
+.info-image{
+	align:center;
+	}
+
+#search-container {
+    position: absolute;
+    z-index: 3; 
+}
+
+#search-nav {
+    width: 280px;
+    max-height: 600px;
+    background-color: rgba(256,256,256,.9);
+    border: solid 2px orange;
+    overflow: hidden;
+}
+
+#scroller {
+    max-height: 480px;
+    overflow: scroll;
+    margin: 0 5px;
+}
+
+#arrow {
+    height: 50px;
+    width: 50px;
+}
+
+#arrow-container {
+    background-color: orange;
+    opacity: 0.9;
+    max-width: 50px;
+    border-radius: 50%;
+}
+#input {
+    margin: 15px 0 5px 20px;
+    width: 83%;
+    height: 35px;
+    font-size: 17px;
+    font-family: helvetica, sans-serif;
+    color: #9D9D9D;
+    border: none;
+    -webkit-box-shadow: 2px 2px 5px #9D9D9D;
+    outline: none;
+}
+
+.reset-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    float: middle;
+}
+
+#reset,
+#reset:focus {
+    float: center;
+    height: 75px;
+    width: 75px;
+    float: right;
+    margin: 0 10px 15px 0;
+    border-radius: 50%;
+    border: solid white 2px;
+    background-color: orange;
+    opacity: 0.9;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+#reset:hover {
+    background-color: white;
+    color: orange;
+    border: solid orange 2px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+li {
+	font-family: Helvetica,
+	sans-serif;
+	padding: 8px 0 15px 15px;
+}
+li:hover {
+	background-color: #7D7D7D;
+	 color: white;}
+
+@media screen and (max-width: 700px) and (orientation:landscape) {
+	#search-container {
+		display: none;
+	}
+}

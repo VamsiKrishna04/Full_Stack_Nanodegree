@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Some Tourist Places Of Andhra Pradesh</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">    
+</head>
+<body>
+<!-- Map Content -->
+<div id="map"></div>
+<div id="search-container">
+        <div id="search-nav">
+        	<h3 align="center">Some Tourist Places Around Andhra Pradesh</h3>
+            <input id="input" placeholder="Search…" type="input" data-bind="textInput: query, valueUpdate: 'keydown'" autocomplete="off"></input>
+            <div id="scroller">
+                <ul data-bind="template: {name: 'touristPlace', foreach:touristPlaces}">
+                </ul>
+                <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a>
+                <script type="text/html" id="touristPlace">
+                    <div data-bind="visible: visible">
+                        <a href="#" data-bind="attr: {id: id}">
+                            <li>
+                                <strong data-bind="text: title"></strong>
+                            </li>
+                        </a>
+                    </div>
+                </script>               
+            </div>
+        </div>
+        <div id="arrow-container">
+            <img id="arrow" src="Images/up-arrow.gif" alt="arrow image">
+        </div>
+    </div>
+    <div class="reset-container">
+        <button id="reset">Reset Map Zoom</button>
+    </div>                
+      <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Knockout JS -->
+	<script type="text/javascript" src="Js/lib/knockout-3.3.0.js"></script>
+    <!--Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="Js/script.js"></script>
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm_ZrV_FxK5Ere8eAmVeFzsaUHMJZ2koQ&libraries=geometry&v=3&callback=initialize">
+    </script> 
+</body>
+</html>
