@@ -9,7 +9,10 @@ This page explains how to secure and set up a Linux distribution on a virtual ma
 - The database server is [PostgreSQL](https://www.postgresql.org/).
 - My local machine is Ubuntu 18.10.
 
-You can visit http://13.232.136.53.xip.io/ or http://ec2-13-232-136-53.ap-south-1.compute.amazonaws.com/ for the website deployed.
+You can visit ~~http://13.232.136.53.xip.io/~~ or ~~`http://ec2-13-232-136-53.ap-south-1.compute.amazonaws.com/`~~  for the website deployed.
+
+_Note that since I have now graduated, the original server has been disabled. You might find
+something else there now, but what follows would apply when setting up a new server._
 
 
 
