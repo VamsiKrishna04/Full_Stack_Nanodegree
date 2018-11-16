@@ -112,8 +112,7 @@ function setMarkers(touristPlaces) {
           largeInfowindow.setContent(populateInfoWindow(marker,largeInfowindow));
           largeInfowindow.open(map,marker);
           map.setZoom(16);
-          map.setCenter(marker.getPosition());
-          touristPlaces[i].picBoolTest = true;
+          map.setCenter(marker.getPosition());          
         };
       })(touristPlaces[i].holdMarker, i));
       google.maps.event.addListener(touristPlaces[i].holdMarker, 'click', toggleBounce);
